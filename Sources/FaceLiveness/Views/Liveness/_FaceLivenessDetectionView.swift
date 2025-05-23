@@ -51,8 +51,7 @@ struct _FaceLivenessDetectionView<VideoView: View>: View {
                     .frame(width: geometry.size.width, height: geometry.size.height)
                 }
             }
-            .edgesIgnoringSafeArea(.bottom)
         }
-        .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
