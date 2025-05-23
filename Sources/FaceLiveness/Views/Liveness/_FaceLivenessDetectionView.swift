@@ -32,10 +32,10 @@ struct _FaceLivenessDetectionView<VideoView: View>: View {
                 videoView
                 VStack {
                     HStack(alignment: .top) {
-                        if viewModel.livenessState.shouldDisplayRecordingIcon {
-                            RecordingButton()
-                                .accessibilityHidden(true)
-                        }
+//                        if viewModel.livenessState.shouldDisplayRecordingIcon {
+//                            RecordingButton()
+//                                .accessibilityHidden(true)
+//                        }
 
                         Spacer()
 
