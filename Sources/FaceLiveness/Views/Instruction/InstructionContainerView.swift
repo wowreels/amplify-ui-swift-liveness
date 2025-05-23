@@ -83,7 +83,7 @@ struct InstructionContainerView: View {
         case .pendingFacePreparedConfirmation(let reason):
             InstructionView(
                 text: .init(reason.localizedValue),
-                backgroundColor: .livenessPrimaryBackground,
+                backgroundColor: reason == .pendingCheck ? .clear : .livenessPrimaryBackground,
                 textColor: .livenessPrimaryLabel,
                 font: messageFont
             )
