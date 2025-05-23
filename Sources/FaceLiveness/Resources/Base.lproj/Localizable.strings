@@ -19,7 +19,7 @@
 "amplify_ui_liveness_challenge_instruction_move_face_back" = "Слишком близко";
 "amplify_ui_liveness_challenge_instruction_move_face_closer" = "Приблизь лицо";
 "amplify_ui_liveness_challenge_instruction_move_face_in_front_of_camera" = "Поднеси лицо к камере";
-"amplify_ui_liveness_challenge_instruction_multiple_faces_detected" = "Only one face per check";
+"amplify_ui_liveness_challenge_instruction_multiple_faces_detected" = "Убедись, что перед камерой находится только одно лицо";
 "amplify_ui_liveness_challenge_instruction_hold_still" = "Сохраняй неподвижность";
 
 "amplify_ui_liveness_challenge_connecting" = "Connecting...";
@@ -48,4 +48,4 @@
 "amplify_ui_liveness_face_not_prepared_reason_move_to_brighter_area" = "Move to brighter area";
 "amplify_ui_liveness_face_not_prepared_reason_no_face" = "Поднеси лицо к камере ";
 "amplify_ui_liveness_face_not_prepared_reason_multiple_faces" = "Only one face per check";
-"amplify_ui_liveness_face_not_prepared_reason_face_too_close" = "Move face farther away";
+"amplify_ui_liveness_face_not_prepared_reason_face_too_close" = "Слишком близко";
