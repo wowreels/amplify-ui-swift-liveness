@@ -22,7 +22,7 @@ class OvalView: UIView {
         let oval = UIBezierPath(ovalIn: ovalFrame)
         mask.append(oval.reversing())
 
-        UIColor.white.withAlphaComponent(0.9).setFill()
+        UIColor.white.setFill()
         mask.fill()
 
         UIColor.clear.setFill()
