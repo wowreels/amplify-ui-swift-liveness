@@ -9,8 +9,8 @@ import SwiftUI
 
 extension Color {
     static let livenessPrimaryBackground = Color.dynamicColors(
-        light: .hex("#047D95"),
-        dark: .hex("#7DD6E8")
+        light: .hex("#FF5016"),
+        dark: .hex("#FF5016")
     )
 
     static let livenessPrimaryLabel = Color.dynamicColors(

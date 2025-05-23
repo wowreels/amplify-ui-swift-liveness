@@ -11,6 +11,7 @@ import Combine
 struct InstructionContainerView: View {
     @ObservedObject var viewModel: FaceLivenessDetectionViewModel
 
+    private let messageFont = .custom("OceanicGothic-Bold", size: 17)
     var body: some View {
         switch viewModel.livenessState.state {
         case .displayingFreshness:
@@ -18,7 +19,7 @@ struct InstructionContainerView: View {
                 text: LocalizedStrings.challenge_instruction_hold_still,
                 backgroundColor: .livenessPrimaryBackground,
                 textColor: .livenessPrimaryLabel,
-                font: .title
+                font: messageFont
             )
             .onAppear {
                 UIAccessibility.post(
@@ -32,7 +33,7 @@ struct InstructionContainerView: View {
                 text: LocalizedStrings.challenge_instruction_move_face_back,
                 backgroundColor: .livenessErrorBackground,
                 textColor: .livenessErrorLabel,
-                font: .title
+                font: messageFont
             )
             .onAppear {
                 UIAccessibility.post(
@@ -46,7 +47,7 @@ struct InstructionContainerView: View {
                 text: .init(reason.localizedValue),
                 backgroundColor: .livenessPrimaryBackground,
                 textColor: .livenessPrimaryLabel,
-                font: .title
+                font: messageFont
             )
 
             ProgressBarView(
@@ -62,7 +63,7 @@ struct InstructionContainerView: View {
                 text: LocalizedStrings.challenge_instruction_move_face_closer,
                 backgroundColor: .livenessPrimaryBackground,
                 textColor: .livenessPrimaryLabel,
-                font: .title
+                font: messageFont
             )
             .onAppear {
                 UIAccessibility.post(
@@ -84,7 +85,7 @@ struct InstructionContainerView: View {
                 text: .init(reason.localizedValue),
                 backgroundColor: .livenessPrimaryBackground,
                 textColor: .livenessPrimaryLabel,
-                font: .title
+                font: messageFont
             )
         case .completedDisplayingFreshness:
             InstructionView(
@@ -102,7 +103,7 @@ struct InstructionContainerView: View {
                 text: LocalizedStrings.challenge_instruction_hold_still,
                 backgroundColor: .livenessPrimaryBackground,
                 textColor: .livenessPrimaryLabel,
-                font: .title
+                font: messageFont
             )
         default:
             EmptyView()

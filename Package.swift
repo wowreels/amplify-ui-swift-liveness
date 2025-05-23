@@ -26,7 +26,8 @@ let package = Package(
             resources: [
                 .process("Resources/Base.lproj"),
                 .copy("Resources/face_detection_short_range.mlmodelc"),
-                .process("AssetsLiveness")
+                .process("AssetsLiveness"),
+                .process("Fonts")
             ]
         ),
         .testTarget(
