@@ -39,8 +39,6 @@ struct _FaceLivenessDetectionView<VideoView: View>: View {
                                 action: viewModel.closeButtonAction
                             )
                         }
-                        .padding(.trailing, 6)
-                        
                         InstructionContainerView(
                             viewModel: viewModel
                         )
