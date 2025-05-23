@@ -47,7 +47,7 @@ final class _LivenessViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        view.backgroundColor = .white
         layoutSubviews()
         setupAVLayer()
     }
