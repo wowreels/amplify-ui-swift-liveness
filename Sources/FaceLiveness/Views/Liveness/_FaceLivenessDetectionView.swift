@@ -34,18 +34,13 @@ struct _FaceLivenessDetectionView<VideoView: View>: View {
                 GeometryReader { geometry in
                     VStack {
                         HStack(alignment: .top) {
-                            //                        if viewModel.livenessState.shouldDisplayRecordingIcon {
-                            //                            RecordingButton()
-                            //                                .accessibilityHidden(true)
-                            //                        }
-                            
                             Spacer()
-                            
                             CloseButton(
                                 action: viewModel.closeButtonAction
                             )
                         }
-                        .padding()
+                        .padding(.top, 10)
+                        .padding(.trailing)
                         
                         InstructionContainerView(
                             viewModel: viewModel
@@ -54,11 +49,10 @@ struct _FaceLivenessDetectionView<VideoView: View>: View {
                         Spacer()
                     }
                     .padding([.leading, .trailing])
-                    //.aspectRatio(3/4, contentMode: .fill)
                     .frame(width: geometry.size.width, height: geometry.size.height)
                 }
             }
         }
-        .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.bottom)
     }
 }

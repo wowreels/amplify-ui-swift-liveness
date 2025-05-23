@@ -14,11 +14,8 @@ struct CloseButton: View {
         Button(
             action: action,
             label: {
-                Image(systemName: "xmark")
-                    .font(.system(size: 18, weight: .bold))
-                    .foregroundColor(.livenessLabel)
-                    .frame(width: 44, height: 44)
-                    .background(Color.livenessBackground)
+                Image(.xMark)
+                    .frame(width: 24, height: 24)
                     .clipShape(Circle())
                     .accessibilityLabel(Text(LocalizedStrings.close_button_a11y))
             }
