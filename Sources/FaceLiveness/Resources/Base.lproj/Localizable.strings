@@ -17,10 +17,10 @@
 "amplify_ui_liveness_challenge_instruction_hold_face_during_countdown" = "Hold face position during countdown.";
 "amplify_ui_liveness_challenge_instruction_hold_face_during_freshness" = "Hold face in oval for colored lights.";
 "amplify_ui_liveness_challenge_instruction_move_face_back" = "Move back";
-"amplify_ui_liveness_challenge_instruction_move_face_closer" = "Move closer";
-"amplify_ui_liveness_challenge_instruction_move_face_in_front_of_camera" = "Move face in front of camera";
+"amplify_ui_liveness_challenge_instruction_move_face_closer" = "Приблизь лицо";
+"amplify_ui_liveness_challenge_instruction_move_face_in_front_of_camera" = "Поднеси лицо к камере";
 "amplify_ui_liveness_challenge_instruction_multiple_faces_detected" = "Only one face per check";
-"amplify_ui_liveness_challenge_instruction_hold_still" = "Hold still";
+"amplify_ui_liveness_challenge_instruction_hold_still" = "Сохраняй неподвижность";
 
 "amplify_ui_liveness_challenge_connecting" = "Connecting...";
 "amplify_ui_liveness_challenge_verifying" = "Verifying";
@@ -39,7 +39,7 @@
 "amplify_ui_liveness_camera_permission_button_header" = "Camera is not accessible";
 "amplify_ui_liveness_camera_permission_button_description" = "You may have to go into settings to grant camera permissions and close the app and retry.";
 
-"amplify_ui_liveness_face_not_prepared_reason_pendingCheck" = " ";
+"amplify_ui_liveness_face_not_prepared_reason_pendingCheck" = " dsdsa sadas";
 "amplify_ui_liveness_face_not_prepared_reason_not_in_oval" = "Move face to fit in oval";
 "amplify_ui_liveness_face_not_prepared_reason_move_face_closer" = "Move closer";
 "amplify_ui_liveness_face_not_prepared_reason_move_face_right" = "Move face right";
