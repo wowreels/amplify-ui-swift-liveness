@@ -30,30 +30,33 @@ struct _FaceLivenessDetectionView<VideoView: View>: View {
             Color.black
             ZStack {
                 videoView
-                VStack {
-                    HStack(alignment: .top) {
-//                        if viewModel.livenessState.shouldDisplayRecordingIcon {
-//                            RecordingButton()
-//                                .accessibilityHidden(true)
-//                        }
-
-                        Spacer()
-
-                        CloseButton(
-                            action: viewModel.closeButtonAction
+                
+                GeometryReader { geometry in
+                    VStack {
+                        HStack(alignment: .top) {
+                            //                        if viewModel.livenessState.shouldDisplayRecordingIcon {
+                            //                            RecordingButton()
+                            //                                .accessibilityHidden(true)
+                            //                        }
+                            
+                            Spacer()
+                            
+                            CloseButton(
+                                action: viewModel.closeButtonAction
+                            )
+                        }
+                        .padding()
+                        
+                        InstructionContainerView(
+                            viewModel: viewModel
                         )
+                        
+                        Spacer()
                     }
-                    .padding()
-
-                    InstructionContainerView(
-                        viewModel: viewModel
-                    )
-
-                    Spacer()
+                    .padding([.leading, .trailing])
+                    //.aspectRatio(3/4, contentMode: .fill)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
                 }
-                .padding([.leading, .trailing])
-                .aspectRatio(3/4, contentMode: .fit)
-                .frame(maxWidth: .infinity)
             }
         }
         .edgesIgnoringSafeArea(.all)
