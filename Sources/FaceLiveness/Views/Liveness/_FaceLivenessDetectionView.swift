@@ -39,13 +39,14 @@ struct _FaceLivenessDetectionView<VideoView: View>: View {
                                 action: viewModel.closeButtonAction
                             )
                         }
+                        .padding(.trailing, 6)
+                        
                         InstructionContainerView(
                             viewModel: viewModel
                         )
                         
                         Spacer()
                     }
-                    .padding([.leading, .trailing])
                     .frame(width: geometry.size.width, height: geometry.size.height)
                 }
             }
