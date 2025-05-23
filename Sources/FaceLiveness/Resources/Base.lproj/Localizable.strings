@@ -23,7 +23,7 @@
 "amplify_ui_liveness_challenge_instruction_hold_still" = "Сохраняй неподвижность";
 
 "amplify_ui_liveness_challenge_connecting" = "Connecting...";
-"amplify_ui_liveness_challenge_verifying" = "Verifying";
+"amplify_ui_liveness_challenge_verifying" = "Идёт проверка";
 "amplify_ui_liveness_challenge_cancel_a11y" = "Cancel Challenge";
 
 "amplify_ui_liveness_camera_setting_alert_title" = "Change Your Camera Settings";
@@ -46,6 +46,6 @@
 "amplify_ui_liveness_face_not_prepared_reason_move_face_left" = "Move face left";
 "amplify_ui_liveness_face_not_prepared_reason_move_to_dimmer_area" = "Move to dimmer area";
 "amplify_ui_liveness_face_not_prepared_reason_move_to_brighter_area" = "Move to brighter area";
-"amplify_ui_liveness_face_not_prepared_reason_no_face" = "Move face in front of camera";
+"amplify_ui_liveness_face_not_prepared_reason_no_face" = "Поднеси лицо к камере ";
 "amplify_ui_liveness_face_not_prepared_reason_multiple_faces" = "Only one face per check";
 "amplify_ui_liveness_face_not_prepared_reason_face_too_close" = "Move face farther away";

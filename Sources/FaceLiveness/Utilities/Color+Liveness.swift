@@ -52,4 +52,15 @@ extension Color {
         light: .hex("#AEB3B7"), 
         dark: .white
     )
+    
+    static let progressEmptyBackground = Color.dynamicColors(
+        light: .hex("#CDD1D7"),
+        dark: .white
+    )
+    
+    static let livenessSecondaryBackground = Color.dynamicColors(
+        light: .hex("#F2F2F7"),
+        dark: .white
+    )
 }
+
