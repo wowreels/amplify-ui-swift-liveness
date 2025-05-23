@@ -15,7 +15,7 @@ struct CloseButton: View {
             action: action,
             label: {
                 Image(.xMark)
-                    .frame(width: 24, height: 24)
+                    .frame(width: 44, height: 44)
                     .clipShape(Circle())
                     .accessibilityLabel(Text(LocalizedStrings.close_button_a11y))
             }

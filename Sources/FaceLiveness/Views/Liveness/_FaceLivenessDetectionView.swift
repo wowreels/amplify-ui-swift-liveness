@@ -39,8 +39,7 @@ struct _FaceLivenessDetectionView<VideoView: View>: View {
                                 action: viewModel.closeButtonAction
                             )
                         }
-                        .padding(.top, 10)
-                        .padding(.trailing)
+                        .padding(.trailing, 6)
                         
                         InstructionContainerView(
                             viewModel: viewModel
@@ -52,7 +51,8 @@ struct _FaceLivenessDetectionView<VideoView: View>: View {
                     .frame(width: geometry.size.width, height: geometry.size.height)
                 }
             }
+            .edgesIgnoringSafeArea(.bottom)
         }
-        .edgesIgnoringSafeArea(.bottom)
+        .edgesIgnoringSafeArea(.all)
     }
 }
