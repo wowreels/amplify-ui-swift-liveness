@@ -11,7 +11,7 @@ import Combine
 struct InstructionContainerView: View {
     @ObservedObject var viewModel: FaceLivenessDetectionViewModel
 
-    private let messageFont = .custom("OceanicGothic-Bold", size: 17)
+    private let messageFont = Font.custom("OceanicGothic-Bold", size: 17)
     var body: some View {
         switch viewModel.livenessState.state {
         case .displayingFreshness:
