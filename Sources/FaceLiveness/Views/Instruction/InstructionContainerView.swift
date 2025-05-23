@@ -52,12 +52,12 @@ struct InstructionContainerView: View {
 
             ProgressBarView(
                 emptyColor: .progressEmptyBackground,
-                borderColor: .white,
+                borderColor: .progressEmptyBackground,
                 fillColor: .livenessPrimaryBackground,
                 indicatorColor: .livenessPrimaryBackground,
                 percentage: percentage
             )
-            .frame(width: 200, height: 30)
+            .frame(width: 200, height: 20)
         case .recording(ovalDisplayed: true):
             InstructionView(
                 text: LocalizedStrings.challenge_instruction_move_face_closer,
@@ -74,16 +74,16 @@ struct InstructionContainerView: View {
 
             ProgressBarView(
                 emptyColor: .progressEmptyBackground,
-                borderColor: .white,
+                borderColor: .progressEmptyBackground,
                 fillColor: .livenessPrimaryBackground,
                 indicatorColor: .livenessPrimaryBackground,
                 percentage: 0.2
             )
-            .frame(width: 200, height: 30)
+            .frame(width: 200, height: 20)
         case .pendingFacePreparedConfirmation(let reason):
             InstructionView(
                 text: .init(reason.localizedValue),
-                backgroundColor: reason == .pendingCheck ? .clear : .livenessSecondaryBackground,
+                backgroundColor: .livenessSecondaryBackground,
                 textColor: .black,
                 font: messageFont
             )

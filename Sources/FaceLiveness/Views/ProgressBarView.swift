@@ -19,7 +19,7 @@ struct ProgressBarView: View {
             ZStack(alignment: .leading) {
                 Rectangle()
                     .border(borderColor, width: 1)
-                    .cornerRadius(8, corners: .allCorners)
+                    .cornerRadius(6, corners: .allCorners)
                     .frame(
                         width: proxy.size.width,
                         height: proxy.size.height - 8
@@ -27,7 +27,7 @@ struct ProgressBarView: View {
                     .foregroundColor(emptyColor)
 
                 Rectangle()
-                    .cornerRadius(8, corners: .allCorners)
+                    .cornerRadius(6, corners: .allCorners)
                     .frame(
                         width: min(percentage, 1) * proxy.size.width,
                         height: proxy.size.height - 8
