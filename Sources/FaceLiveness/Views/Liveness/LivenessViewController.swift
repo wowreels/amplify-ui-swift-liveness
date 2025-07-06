@@ -20,6 +20,13 @@ final class _LivenessViewController: UIViewController {
     var ovalRect: CGRect?
     var freshness = Freshness()
     let freshnessView = FreshnessView()
+    let whiteView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        view.alpha = 0
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     var readyForOval = false
 
     init(
@@ -66,6 +73,15 @@ final class _LivenessViewController: UIViewController {
             freshnessView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             freshnessView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+        
+        view.addSubview(whiteView)
+        NSLayoutConstraint.activate([
+            whiteView.topAnchor.constraint(equalTo: view.topAnchor),
+            whiteView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            whiteView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            whiteView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        
         freshnessView.clearColors()
     }
 
@@ -122,7 +138,7 @@ extension _LivenessViewController: FaceLivenessViewControllerPresenter {
             guard let previewLayer = self.previewLayer else { return }
             let imageView = UIImageView(image: uiImage)
             imageView.frame = previewLayer.frame
-            self.view.addSubview(imageView)
+            self.view.insertSubview(imageView, at: 0)
             (previewLayer as? AVCaptureVideoPreviewLayer)?.session = nil
             previewLayer.removeFromSuperlayer()
             self.viewModel.stopRecording()
@@ -145,7 +161,9 @@ extension _LivenessViewController: FaceLivenessViewControllerPresenter {
             onComplete: { [weak self] in
                 guard let self else { return }
                 self.freshnessView.removeFromSuperview()
-
+                UIView.animate(withDuration: 0.3) {
+                    self.whiteView.alpha = 1
+                }
                 self.viewModel.handleFreshnessComplete(
                     faceGuide: self.faceGuideRect!
                 )
