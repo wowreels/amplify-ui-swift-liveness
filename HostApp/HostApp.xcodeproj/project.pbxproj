@@ -300,11 +300,12 @@
 			};
 			buildConfigurationList = 9070FF9B285112B4009867D5 /* Build configuration list for PBXProject "HostApp" */;
 			compatibilityVersion = "Xcode 13.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 9070FF97285112B4009867D5;
 			productRefGroup = 9070FFA1285112B4009867D5 /* Products */;

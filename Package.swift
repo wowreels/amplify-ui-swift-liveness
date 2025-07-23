@@ -24,7 +24,7 @@ let package = Package(
                 .product(name: "AWSPredictionsPlugin", package: "amplify-swift")
             ],
             resources: [
-                .process("Resources/Base.lproj"),
+                .process("Resources"),
                 .copy("Resources/face_detection_short_range.mlmodelc"),
                 .process("AssetsLiveness"),
                 .process("Fonts")
