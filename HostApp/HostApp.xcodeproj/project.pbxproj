@@ -305,7 +305,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ru,
 			);
 			mainGroup = 9070FF97285112B4009867D5;
 			productRefGroup = 9070FFA1285112B4009867D5 /* Products */;
