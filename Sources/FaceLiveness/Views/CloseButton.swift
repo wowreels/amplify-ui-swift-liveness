@@ -12,14 +12,15 @@ struct CloseButton: View {
 
     var body: some View {
         Button(
-            action: action,
+            action: {},
             label: {
-                Image(.xMark)
-                    .frame(width: 44, height: 44)
-                    .clipShape(Circle())
-                    .accessibilityLabel(Text(LocalizedStrings.close_button_a11y))
+//                Image(.xMark)
+//                    .frame(width: 44, height: 44)
+//                    .clipShape(Circle())
+//                    .accessibilityLabel(Text(LocalizedStrings.close_button_a11y))
             }
         )
+        .frame(width: 44, height: 44)
     }
 }
 
