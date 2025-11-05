@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+@_spi(PredictionsFaceLiveness) import AWSPredictionsPlugin
 
 struct InstructionContainerView: View {
     @ObservedObject var viewModel: FaceLivenessDetectionViewModel

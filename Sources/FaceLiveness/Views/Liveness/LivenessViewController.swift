@@ -121,7 +121,6 @@ final class _LivenessViewController: UIViewController {
     var initialFace: FaceDetection?
     var videoStartTimeStamp: UInt64?
     var faceMatchStartTime: UInt64?
-    var faceGuideRect: CGRect?
     var freshnessEventsComplete = false
     var videoSentCount = 0
     var hasSentFinalEvent = false
@@ -161,12 +160,12 @@ extension _LivenessViewController: FaceLivenessViewControllerPresenter {
             onComplete: { [weak self] in
                 guard let self else { return }
                 self.freshnessView.removeFromSuperview()
+
                 UIView.animate(withDuration: 0.3) {
                     self.whiteView.alpha = 1
                 }
-                self.viewModel.handleFreshnessComplete(
-                    faceGuide: self.faceGuideRect!
-                )
+
+                self.viewModel.handleFreshnessComplete()
             }
         )
     }
@@ -174,7 +173,6 @@ extension _LivenessViewController: FaceLivenessViewControllerPresenter {
     func drawOvalInCanvas(_ ovalRect: CGRect) {
         DispatchQueue.main.async {
             guard let previewLayer = self.previewLayer else { return }
-            self.faceGuideRect = ovalRect
 
             let ovalView = OvalView(
                 frame: previewLayer.frame,
@@ -190,5 +188,9 @@ extension _LivenessViewController: FaceLivenessViewControllerPresenter {
             self.ovalRect = ovalRect
             self.ovalExists = true
         }
+    }
+    
+    func completeNoLightCheck() {
+        self.viewModel.completeNoLightCheck()
     }
 }
