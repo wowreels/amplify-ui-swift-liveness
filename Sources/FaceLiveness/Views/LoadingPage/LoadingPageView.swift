@@ -11,11 +11,15 @@ struct LoadingPageView: View {
     
     var body: some View {
         VStack {
-            HStack(spacing: 5) {
-                ProgressView()
-                Text(LocalizedStrings.challenge_connecting)
-            }
-            
+            InstructionView(
+                text: LocalizedStrings.challenge_connecting,
+                backgroundColor: .livenessSecondaryBackground,
+                textColor: .black,
+                font:  Font.custom("OceanicGothic-Bold", size: 17),
+                showLoading: false
+            )
+            .padding(.top, 52)
+            Spacer()
         }
     }
 }

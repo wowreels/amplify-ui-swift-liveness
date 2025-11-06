@@ -22,7 +22,7 @@
 "amplify_ui_liveness_challenge_instruction_multiple_faces_detected" = "Убедись, что перед камерой находится только одно лицо";
 "amplify_ui_liveness_challenge_instruction_hold_still" = "Сохраняй неподвижность";
 
-"amplify_ui_liveness_challenge_connecting" = "Connecting...";
+"amplify_ui_liveness_challenge_connecting" = "Соединение";
 "amplify_ui_liveness_challenge_verifying" = "Идёт проверка";
 "amplify_ui_liveness_challenge_cancel_a11y" = "Cancel Challenge";
 
